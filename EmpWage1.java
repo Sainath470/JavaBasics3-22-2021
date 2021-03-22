@@ -6,6 +6,7 @@ public class EmpWage1
 		int Full_Time=8;
 		int Part_Time=4;
 		int Total_Wage=0;
+		int Working_days=20;
 		double empCheck=Math.floor(Math.random()*10)%3;
 		System.out.println("empCheck= "+empCheck);
 			int empCheck1=(int)empCheck;
@@ -27,7 +28,7 @@ public class EmpWage1
 			default:
 			System.out.println("Invalid");
 			}
-			System.out.println("Total_Wage="+Total_Wage);
+			System.out.println("Total Wage Per Month= "+Total_Wage*20);
 
 	}
 }
