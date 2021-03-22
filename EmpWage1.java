@@ -3,8 +3,8 @@ public class EmpWage1
 	public static void main(String args[])
 	{
 		int Wage_Per_Hour=20;
-		int Full_Time=10;
-		int Part_Time=8;
+		int Full_Time=8;
+		int Part_Time=4;
 		int Total_Wage=0;
 		double empCheck=Math.floor(Math.random()*10)%3;
 		System.out.println("empCheck= "+empCheck);
