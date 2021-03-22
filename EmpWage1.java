@@ -8,22 +8,26 @@ public class EmpWage1
 		int Total_Wage=0;
 		double empCheck=Math.floor(Math.random()*10)%3;
 		System.out.println("empCheck= "+empCheck);
-
-			if(empCheck==0)
+			int empCheck1=(int)empCheck;
+			switch(empCheck1)
 			{
-				System.out.println("Employee is Present");
+			case 0:
+				System.out.println("Employee is present");
 				System.out.println("Done Full Time work");
 				Total_Wage = Wage_Per_Hour*Full_Time;
-				System.out.println("Total_Wage="+Total_Wage);
+				break;
+			case 1:
+				System.out.println("Employee is present");
+				System.out.println("Done Full Time work");
+ 				Total_Wage = Wage_Per_Hour*Part_Time;
+				break;
+			case 2:
+				System.out.println("Employee is Absent");
+				break;
+			default:
+			System.out.println("Invalid");
 			}
-			else if(empCheck==1)
-			{
-				System.out.println("Employee is Present");
-				System.out.println("Done Part Time work");
-				Total_Wage = Wage_Per_Hour*Part_Time;
-				System.out.println("Total_Wage="+Total_Wage);
-			}
-			else
-					System.out.println("Employee is Absent");
+			System.out.println("Total_Wage="+Total_Wage);
+
 	}
 }
