@@ -18,7 +18,7 @@ public class EmpWage1
 				break;
 			case 1:
 				System.out.println("Employee is present");
-				System.out.println("Done Full Time work");
+				System.out.println("Done part Time work");
  				Total_Wage = Wage_Per_Hour*Part_Time;
 				break;
 			case 2:
